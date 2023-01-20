@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/abdullahozcalisan/bestcloudapp.git
+    repoURL: https://github.com/abdullahozcalisan/bestcloud-deployment.git
     targetRevision: HEAD
     path: deploy
   destination: 
