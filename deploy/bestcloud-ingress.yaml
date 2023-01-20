@@ -18,6 +18,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: bestcloudapp-svc
+            name: bestcloudapp-v2-svc
             port:
               number: 8080
