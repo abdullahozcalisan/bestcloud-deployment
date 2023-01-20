@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: sock-shop-app
+  name: bestcloud-app
   namespace: argocd
 spec:
   project: default
