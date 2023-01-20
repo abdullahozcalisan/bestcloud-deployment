@@ -5,7 +5,7 @@ metadata:
   labels:
     app: caseapp
     version: 2.0
-  namespace: bestcloudapp-v2
+  namespace: bestcloudapp
 spec:
   replicas: 3
   selector:
@@ -29,7 +29,7 @@ metadata:
   labels:
     app: caseapp
     version: 2.0       
-  namespace: bestcloudapp-v2  
+  namespace: bestcloudapp  
 spec:
   type: ClusterIP
   ports:
