@@ -10,11 +10,12 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: bestcloudapp-v2
+      version: 2.0
   template:
     metadata:
       labels:
-        app: bestcloudapp-v2
+        app: caseapp
+        version: 2.0
     spec:
       containers:
       - name: bestcloudapp-v2
