@@ -3,17 +3,20 @@ kind: Deployment
 metadata:
   name: bestcloudapp
   labels:
-    app: caseapp 
+    app: caseapp
+    version: 1.0
   namespace: bestcloudapp
 spec:
   replicas: 3
   selector:
     matchLabels:
       app: bestcloudapp
+      version: 1.0
   template:
     metadata:
       labels:
         app: bestcloudapp
+        version: 1.0        
     spec:
       containers:
       - name: bestcloudapp
@@ -26,7 +29,8 @@ kind: Service
 metadata:
   name: bestcloudapp-svc
   labels:
-    app: caseapp   
+    app: caseapp
+     version: 1.0
   namespace: bestcloudapp  
 spec:
   type: ClusterIP
