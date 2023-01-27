@@ -36,4 +36,5 @@ spec:
   ports:
   - port: 8080
   selector:
-    app: bestcloudapp-v2
+    app: caseapp
+    version: v2
