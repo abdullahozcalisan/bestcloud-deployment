@@ -3,7 +3,8 @@ kind: Ingress
 metadata:
   name: bestcloudapp-ingress
   labels:
-    app: caseapp   
+    app: caseapp
+    version: v2   
   namespace: bestcloudapp
   annotations:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
