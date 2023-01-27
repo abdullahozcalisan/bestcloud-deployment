@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bestcloudapp-v1
+  labels:
+    app: caseapp
+    version: v1
+  namespace: bestcloudapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: caseapp
+        version: v1
+    spec:
+      containers:
+      - name: bestcloudapp-v1
+        image: aozcalisan/bestcloudapp:9
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bestcloudapp-v1-svc
+  labels:
+    app: caseapp
+    version: v1      
+  namespace: bestcloudapp  
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8080
+  selector:
+    app: caseapp
+    version: v1
