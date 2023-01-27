@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: bestcloudapp-v1
-        image: aozcalisan/bestcloudapp:9
+        image: aozcalisan/bestcloudapp:7
         ports:
         - containerPort: 8080
 ---
